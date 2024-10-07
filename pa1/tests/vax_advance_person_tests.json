@@ -1,0 +1,272 @@
+[
+    {
+        "city": [
+            ["V", 1],
+            ["S", 0],
+            ["V", 0]
+        ],
+        "location": 1,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0,
+        "seed": 0,
+        "expected": ["S", 1],
+        "purpose": "Middle person with two vaxxed neighbors.  This person stays susceptible with an increase in the number of days in that state."
+    },
+    {
+        "city": [
+            ["I", 1],
+            ["S", 0],
+            ["V", 0]
+        ],
+        "location": 1,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0,
+        "seed": 0,
+        "expected": ["I", 0],
+        "purpose": "Susceptible middle person with an infected left neighbor and a vaxxed right neighbor gets infected."
+    },
+    {
+        "city": [
+            ["V", 0],
+            ["S", 0],
+            ["I", 0]
+        ],
+        "location": 1,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0,
+        "seed": 0,
+        "expected": ["I", 0],
+        "purpose": "Susceptible middle person with an infected right neighbor and a vaxxed left neighbor gets infected."
+    },
+    {
+        "city": [
+            ["S", 20],
+            ["V", 0],
+            ["V", 0]
+        ],
+        "location": 0,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0,
+        "seed": 0,
+        "expected": ["S", 21],
+        "purpose": "First person with two vaxxed neighbors.  This person stays susceptible with an increase in the number of days in that state."	
+    },
+    {
+        "city": [
+            ["S", 0],
+            ["V", 0],
+            ["I", 0]
+        ],
+        "location": 0,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0,
+        "seed": 0,
+        "expected": ["I", 0],
+        "purpose": "Susceptible first person with an infected left neighbor and a vaxxed right neighbor gets infected."
+    },
+
+    {
+        "city": [
+            ["S", 0],
+            ["I", 2],
+            ["V", 0]
+        ],
+        "location": 0,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0,
+        "seed": 0,
+        "expected": ["I", 0],
+        "purpose": "Susceptible first person with an infected right neighbor and a vaxxed left neighbor gets infected."
+    },
+
+    {
+        "city": [
+            ["V", 0],
+            ["V", 0],
+            ["S", 11]
+        ],
+        "location": 2,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0,
+        "seed": 0,
+        "expected": ["S", 12],
+        "purpose": "Last person with two vaxxed neighbors.  This person stays susceptible with an increase in the number of days in that state."	
+    },
+    {
+        "city": [
+            ["I", 1],
+            ["V", 0],
+            ["S", 0]
+        ],
+        "location": 2,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0,
+        "seed": 0,
+        "expected": ["I", 0],
+        "purpose": "Susceptible last person with an infected right neighbor and a vaxxed left neighbor gets infected."
+    },
+    {
+        "city": [
+            ["V", 1],
+            ["I", 1500],
+            ["S", 0]
+        ],
+        "location": 2,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0,
+        "seed": 0,
+        "expected": ["I", 0],
+        "purpose": "Susceptible last person with an infected left neighbor and a vaxxed right neighbor gets infected."
+    },
+    {
+        "city": [
+	        ["I", 0],
+            ["V", 2],
+            ["S", 1500],
+            ["V", 0],
+	        ["I", 2]
+        ],
+        "location": 2,
+        "days_contagious": 2000,
+        "days_immune": 4,
+        "infection_probability": 0,
+        "seed": 0,
+        "expected": ["S", 1501],
+        "purpose": "Middle person with two vaxxed neighbors.  This person stays susceptible with an increase in the number of days in that state.  Slightly larger city."
+    },
+    {
+        "city": [
+            ["V", 1],
+            ["S", 0],
+            ["V", 0]
+        ],
+        "location": 0,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0,
+        "seed": 0,
+        "expected": ["V", 2],
+        "purpose": "Vaxxed person with no infected neighbors.  This person stays vaxxed with an increase in the number of days in that state."
+    },
+    {
+        "city": [
+            ["V", 1],
+            ["I", 0],
+            ["V", 0]
+        ],
+        "location": 0,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0.8,
+        "seed": 5,
+        "expected": ["I", 0],
+        "purpose": "Vaxxed person with infected right neighbor.  This person becomes infected."
+    },
+    {
+        "city": [
+            ["V", 1],
+            ["I", 0],
+            ["V", 0]
+        ],
+        "location": 0,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0.5,
+        "seed": 5,
+        "expected": ["V", 2],
+        "purpose": "Vaxxed person with infected right neighbor.  This person stays vaxxed with an increase in the number of days in that state."
+    },
+    {
+        "city": [
+            ["V", 1],
+            ["I", 0],
+            ["V", 0]
+        ],
+        "location": 0,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0.2,
+        "seed": 5,
+        "expected": ["V", 2],
+        "purpose": "Vaxxed person with infected right neighbor.  This person stays vaxxed with an increase in the number of days in that state."
+    },
+    {
+        "city": [
+            ["V", 1],
+            ["I", 0],
+            ["V", 0]
+        ],
+        "location": 2,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0.8,
+        "seed": 15,
+        "expected": ["V", 1],
+        "purpose": "Vaxxed person with infected left neighbor.   This person stays vaxxed with an increase in the number of days in that state."
+    },
+    {
+        "city": [
+            ["V", 1],
+            ["I", 0],
+            ["V", 0]
+        ],
+        "location": 2,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0.5,
+        "seed": 15,
+        "expected": ["V", 1],
+        "purpose": "Vaxxed person with infected left neighbor.   This person stays vaxxed with an increase in the number of days in that state."
+    },
+    {
+        "city": [
+            ["V", 1],
+            ["I", 0],
+            ["V", 0]
+        ],
+        "location": 0,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0.8,
+        "seed": 25,
+        "expected": ["I", 0],
+        "purpose": "Vaxxed person with infected right neighbor.   This person becomes infected."
+    },
+    {
+        "city": [
+            ["V", 1],
+            ["I", 0],
+            ["V", 0]
+        ],
+        "location": 0,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0.5,
+        "seed": 25,
+        "expected": ["I", 0],
+        "purpose": "Vaxxed person with infected right neighbor.   This person becomes infected."
+    },
+    {
+        "city": [
+            ["V", 1],
+            ["I", 0],
+            ["V", 0]
+        ],
+        "location": 0,
+        "days_contagious": 3,
+        "days_immune": 4,
+        "infection_probability": 0.2,
+        "seed": 25,
+        "expected": ["V", 2],
+        "purpose": "Vaxxed person with infected right neighbor.   This person stays vaxxed with an increase in the number of days in that state."
+    }
+]
